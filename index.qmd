@@ -4,6 +4,8 @@ title: "RDIF-workshop"
 
 ## Overview
 
+<!-- The focus of this work shop is comparing educational and psychological tests over  independent groups of respondents. Often, we want to use test data to compare groups on the construct being measured, for example, by comparing group means on the overall test score. However, test scores can also be influenced by attributes of the respondent other than the trait being measured. In the western world, a common example is assessments of depression that ask about whether a person has cried in the last week. Men are less likely to endorse this item than females, even when they have the same level of depression  (Bauer, 2017). Thus comparing men and women on their overall test score would lead to underestimation of the level of depression in men. This example is  -->
+
 This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:
 
 -   Part 1: MI in the unidimensional factor model for categorical data. This begins with a review of the factor model, the interpretation of various "levels" of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.
@@ -11,6 +13,7 @@ This workshop on measurement invariance (MI) and differential item functioning (
 -   Part 2: If MI is rejected, then one or more items must exhibit DIF. This situation, which is also referred to as partial MI, requires inferences about individual assessment items and has traditionally be addressed in the context of item response theory (IRT). This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.
 
 -   Part 3: Review of some more recent approaches to DIF analysis, focusing on the author's work on how DIF can be approached as a problem in robust scaling ([Halpin, 2022](https://arxiv.org/abs/2207.04598)) and extensions of this approach to test for whether DIF affects conclusions about how groups differ on the measured construct.
+
 
 ## Requirements
 
@@ -38,8 +41,6 @@ The course uses a synthetic data example linked below (password protected):
 
 ## Schedule and materials
 
-| Session | Materials                               |
-|---------|-----------------------------------------|
-| 1       | Slides  Notes  Coding Example:  |
-
-
+| Session | Materials                        | Supplementary                                                                   |
+|------------------|---------------------------|---------------------------|
+| Day 1   | Slides - Notes - Coding Example: | *Review of MI and DIF*: [Thissen, 2023](files/DIF-MIhistory9-12-23version.pdf) |
