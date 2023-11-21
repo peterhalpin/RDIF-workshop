@@ -135,7 +135,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
+  <li><a href="#schedule-and-materials" id="toc-schedule-and-materials" class="nav-link" data-scroll-target="#schedule-and-materials">Schedule and materials</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -157,16 +165,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:</p>
+<ul>
+<li><p>Part 1: MI in the unidimensional factor model for categorical data. This begins with a review of the factor model, the interpretation of various “levels” of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.</p></li>
+<li><p>Part 2: If MI is rejected, then one or more items must exhibit DIF. This situation, which is also referred to as partial MI, requires inferences about individual assessment items and has traditionally be addressed in the context of item response theory (IRT). This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.</p></li>
+<li><p>Part 3: Review of some more recent approaches to DIF analysis, focusing on the author’s work on how DIF can be approached as a problem in robust scaling (<a href="https://arxiv.org/abs/2207.04598">Halpin, 2022</a>) and extensions of this approach to test for whether DIF affects conclusions about how groups differ on the measured construct.</p></li>
+</ul>
+</section>
+<section id="requirements" class="level2">
+<h2 class="anchored" data-anchor-id="requirements">Requirements</h2>
+<p>The course assumes a background in factor analysis and / or item response theory. Numerical illustrations use the <code>R</code> programming language. To ensure you are able to follow along with the numerical examples, it is recommended to install the following libraries prior to attending the workhop.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Factor analysis</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lavaan"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"semTools"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># IRT</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"mirt"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Robust DIF</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"peterhalpin/robustDIF"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
+<p>The course uses a synthetic data example linked below (password protected):</p>
+<ul>
+<li>[link]</li>
+</ul>
+</section>
+<section id="schedule-and-materials" class="level2">
+<h2 class="anchored" data-anchor-id="schedule-and-materials">Schedule and materials</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Session</th>
+<th>Materials</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Slides Notes Coding Example:</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
