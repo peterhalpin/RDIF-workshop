@@ -14,7 +14,6 @@ This workshop on measurement invariance (MI) and differential item functioning (
 
 -   Part 3: Review of some more recent approaches to DIF analysis, focusing on the author's work on how DIF can be approached as a problem in robust scaling ([Halpin, 2022](https://arxiv.org/abs/2207.04598)) and extensions of this approach to test for whether DIF affects conclusions about how groups differ on the measured construct.
 
-
 ## Requirements
 
 The course assumes a background in factor analysis and / or item response theory. Numerical illustrations use the `R` programming language. To ensure you are able to follow along with the numerical examples, it is recommended to install the following libraries prior to attending the workhop.
@@ -37,10 +36,12 @@ install.packages("ggplot")
 
 The course uses a synthetic data example linked below (password protected):
 
--   \[link\]
+-   \[check back for link\]
 
 ## Schedule and materials
 
-| Session | Materials                        | Supplementary                                                                   |
-|------------------|---------------------------|---------------------------|
-| Day 1   | Slides - Notes - Coding Example: | *Review of MI and DIF*: [Thissen, 2023](files/DIF-MIhistory9-12-23version.pdf) |
+| Session | Materials                       | Supplementary                                                                                                                                                                                                                                             |
+|-------------------|---------------------------|---------------------------|
+| Day 1   | Slides - Notes - Coding Example | *Review of MI and DIF*: [Thissen, 2023](files/DIF-MIhistory9-12-23version.pdf)                                                                                                                                                                            |
+| Day 2   | Slides - Notes - Coding Example | *Traditional approaches to DIF*: [Teresi et. al, 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8889890/)                                                                                                                                             |
+| Day 3   | Slides - Notes - Coding Example | *Robust scaling*: [He & Cui, 2020](files/He%20and%20Cui%20-%202020%20-%20Evaluating%20Robust%20Scale%20Transformation%20Methods%20Wit.pdf); Robust DIF: [Halpin, 2022](https://arxiv.org/abs/2207.04598); [Wang et al., 2022](files/Wang et al. - 2022 - Testing Differential Item Functioning Without Pred.pdf) |
