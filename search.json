@@ -1,37 +1,37 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "RDIF-workshop",
+    "title": "MI / DIF Workshop",
     "section": "",
-    "text": "This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:\n\nPart 1: MI in the unidimensional factor model for categorical data. This begins with a review of the factor model, the interpretation of various “levels” of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.\nPart 2: If MI is rejected, then one or more items must exhibit DIF. This situation, which is also referred to as partial MI, requires inferences about individual assessment items and has traditionally be addressed in the context of item response theory (IRT). This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.\nPart 3: Review of some more recent approaches to DIF analysis, focusing on the author’s work on how DIF can be approached as a problem in robust scaling (Halpin, 2022) and extensions of this approach to test for whether DIF affects conclusions about how groups differ on the measured construct."
+    "text": "This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:\n\nPart 1 addresses MI in the unidimensional factor model for categorical data. The focus is on various “levels” of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.\nPart 2 addresses what to do when MI is rejected. In this case, it can be concluded that one or more assessment items exhibit DIF, which is also referred to as partial MI. Methods for inferring which items exhibit DIF were originally developed in the context of item response theory (IRT) rather than factor analysis. This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.\nPart 3 reviews of some more recent approaches to DIF analysis, focusing on the author’s work on how DIF can be approached as a problem in robust scaling (Halpin, 2022) and extensions of this approach to evaluate differential test functioning (DTF)."
   },
   {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
-    "title": "RDIF-workshop",
+    "title": "MI / DIF Workshop",
     "section": "",
-    "text": "This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:\n\nPart 1: MI in the unidimensional factor model for categorical data. This begins with a review of the factor model, the interpretation of various “levels” of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.\nPart 2: If MI is rejected, then one or more items must exhibit DIF. This situation, which is also referred to as partial MI, requires inferences about individual assessment items and has traditionally be addressed in the context of item response theory (IRT). This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.\nPart 3: Review of some more recent approaches to DIF analysis, focusing on the author’s work on how DIF can be approached as a problem in robust scaling (Halpin, 2022) and extensions of this approach to test for whether DIF affects conclusions about how groups differ on the measured construct."
+    "text": "This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:\n\nPart 1 addresses MI in the unidimensional factor model for categorical data. The focus is on various “levels” of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.\nPart 2 addresses what to do when MI is rejected. In this case, it can be concluded that one or more assessment items exhibit DIF, which is also referred to as partial MI. Methods for inferring which items exhibit DIF were originally developed in the context of item response theory (IRT) rather than factor analysis. This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.\nPart 3 reviews of some more recent approaches to DIF analysis, focusing on the author’s work on how DIF can be approached as a problem in robust scaling (Halpin, 2022) and extensions of this approach to evaluate differential test functioning (DTF)."
   },
   {
     "objectID": "index.html#requirements",
     "href": "index.html#requirements",
-    "title": "RDIF-workshop",
+    "title": "MI / DIF Workshop",
     "section": "Requirements",
-    "text": "Requirements\nThe course assumes a background in factor analysis and / or item response theory. Numerical illustrations use the R programming language. To ensure you are able to follow along with the numerical examples, it is recommended to install the following libraries prior to attending the workhop.\n\n# Factor analysis\ninstall.packages(\"lavaan\")\ninstall.packages(\"semTools\")\n\n# IRT\ninstall.packages(\"mirt\")\n\n# Robust DIF\ninstall.packages(\"remotes\")\nremotes::install_github(\"peterhalpin/robustDIF\")\n\n# Plotting\ninstall.packages(\"ggplot\")\n\nThe course uses a synthetic data example linked below (password protected):\n\n[check back for link]"
+    "text": "Requirements\nThe course assumes a background in factor analysis and / or item response theory. Numerical illustrations use the R programming language. To ensure participants are able to follow along with the numerical examples during the workshop, it is recommended to install the following libraries prior to attending.\n\n# Factor analysis\ninstall.packages(\"lavaan\")\ninstall.packages(\"semTools\")\n\n# IRT\ninstall.packages(\"mirt\")\n\n# Robust DIF\ninstall.packages(\"remotes\")\nremotes::install_github(\"peterhalpin/robustDIF\")\n\n# Plotting\ninstall.packages(\"ggplot2\")"
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "MI / DIF Workshop",
+    "section": "Data",
+    "text": "Data\nThe data set linked below is used for numerical illustrations. Note that access to the data is password protected. The password will be shared with participants in the first session of the workshop\n\nLink to data"
   },
   {
     "objectID": "index.html#schedule-and-materials",
     "href": "index.html#schedule-and-materials",
-    "title": "RDIF-workshop",
-    "section": "Schedule and materials",
-    "text": "Schedule and materials\n\n\n\nSession\nMaterials\nSupplementary\n\n\n\n\nDay 1\nSlides - Notes - Coding Example\nReview of MI and DIF: Thissen, 2023\n\n\nDay 2\nSlides - Notes - Coding Example\nTraditional approaches to DIF: Teresi et. al, 2021\n\n\nDay 3\nSlides - Notes - Coding Example\nRobust scaling: He & Cui, 2020; Robust DIF: Halpin, 2022; Wang et al., 2022"
+    "title": "MI / DIF Workshop",
+    "section": "Schedule and Materials",
+    "text": "Schedule and Materials\n\n\n\nSession\nMaterials\nSupplementary\n\n\n\n\nPart 1\nSlides\nNotes\nCode\n\n\nReview of MI and DIF: Thissen, 2023\nMI for categorical data: Muthen & Asparouhov, 2002\nMillsap & Yun-Tein, 2004; Wu & Estabrook, 2016\n\n\n\nPart 2\nSlides\nNotes\nCode\n\n\nFactor analysis and IRT: Wirth & Edwards, 2007\nReview of DIF: Teresi et. al, 2021\n\n\n\nPart 3\nSlides\nNotes\nCode\n\n\nRobust scaling: He & Cui, 2020\nRobust DIF: Halpin, 2022; Wang et al.,2022"
   }
 ]
