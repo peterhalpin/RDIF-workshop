@@ -1,22 +1,117 @@
 ---
-title: "RDIF-workshop"
+title: "MI / DIF Workshop"
 ---
 
 ## Overview
+
+<!-- ```{r, echo = F, engine = 'tikz'} -->
+<!-- \usetikzlibrary{positioning} -->
+<!-- \usetikzlibrary{quotes} -->
+<!-- \tikzset{every picture/.style={/utils/exec={\sffamily}}} -->
+
+
+<!-- \begin{tikzpicture} -->
+<!-- \tikzstyle{latent}=[shape=circle,draw=gray!80,fill=none,minimum size=8mm] -->
+<!-- \tikzstyle{resid}=[shape=circle,scale = .75, draw=gray!80,fill=none, minimum size=5mm] -->
+<!-- \tikzstyle{observed}=[shape=rectangle,draw=gray!80,fill=none,minimum size=8mm] -->
+<!-- \tikzstyle{invisible}=[shape=rectangle,draw=none,fill=none,minimum size=8mm] -->
+<!-- \tikzstyle{cor1}=[latex-latex,black, bend left=70] -->
+<!-- \tikzstyle{cor2}=[latex-latex,black, bend right=70] -->
+
+<!-- % Left panel  -->
+
+<!-- \node[invisible] (lab1) at (-4, 1) {Impact on Target Construct}; -->
+<!-- \node[invisible] (panelb) at (-4, -4) {(a)}; -->
+<!-- \node[latent] (l) at (-4, 0) {$\theta$}; -->
+<!-- \node[observed] (x1) at (-6, -3) {$X_1$}; -->
+<!-- \node[observed] (x2) at (-5, -3) {$X_2$}; -->
+<!-- \node[observed] (x3) at (-4, -3) {$X_3$}; -->
+<!-- \node[observed] (x4) at (-3, -3) {$X_4$}; -->
+<!-- \node[observed] (x5) at (-2, -3) {$X_5$}; -->
+
+<!-- \draw[-latex]  (l) edge (x1); -->
+<!-- \draw[-latex]  (l) edge (x2); -->
+<!-- \draw[-latex]  (l) edge (x3); -->
+<!-- \draw[-latex]  (l) edge (x4); -->
+<!-- \draw[-latex]  (l) edge (x5); -->
+<!-- % -->
+<!-- % \node[resid] (e1) at  (-6, -4) {$e_1$}; -->
+<!-- % \node[resid] (e2) at  (-5, -4) {$e_2$}; -->
+<!-- % \node[resid] (e3) at  (-4, -4) {$e_3$}; -->
+<!-- % \node[resid] (e4) at  (-3, -4) {$e_4$}; -->
+<!-- % \node[resid] (e5) at  (-2, -4) {$e_5$}; -->
+<!-- % -->
+<!-- % \draw[-latex]  (e1) edge (x1); -->
+<!-- % \draw[-latex]  (e2) edge (x2); -->
+<!-- % \draw[-latex]  (e3) edge (x3); -->
+<!-- % \draw[-latex]  (e4) edge (x4); -->
+<!-- % \draw[-latex]  (e5) edge (x5); -->
+<!-- %  -->
+<!-- \node[observed] (t) at (-6, 0) {$T$}; -->
+<!-- \draw[-latex, blue, ultra thick]  (t) edge (l);  -->
+<!-- %\node[resid] (e) at  (-3, 0) {$\epsilon$}; -->
+<!-- %\draw[-latex]  (e) edge (l); -->
+
+<!-- % Right panel  -->
+
+<!-- \node[invisible] (lab1) at (4, 1) {Impact + Item-Specific Effects}; -->
+<!-- \node[invisible] (panelb) at (4, -4) {(b)}; -->
+<!-- \node[latent] (l2) at (4, 0) {$\theta$}; -->
+<!-- \node[observed] (y1) at (2, -3) {$X_1$}; -->
+<!-- \node[observed] (y2) at (3, -3) {$X_2$}; -->
+<!-- \node[observed] (y3) at (4, -3) {$X_3$}; -->
+<!-- \node[observed] (y4) at (5, -3) {$X_4$}; -->
+<!-- \node[observed] (y5) at (6, -3) {$X_5$}; -->
+
+<!-- \node[observed] (t2) at (2, 0) {$T$}; -->
+
+<!-- \draw[-latex]  (l2) edge (y1); -->
+<!-- \draw[-latex]  (l2) edge (y2); -->
+<!-- \draw[-latex]  (l2) edge (y3); -->
+<!-- \draw[-latex]  (l2) edge (y4); -->
+<!-- \draw[-latex]  (l2) edge (y5); -->
+
+<!-- \draw[-latex, blue, ultra thick]  (t2) edge (l2);   -->
+<!-- %\node[resid] (f) at  (5, 0) {$\epsilon$}; -->
+<!-- %\draw[-latex]  (f) edge (l2); -->
+
+<!-- \draw[-latex, red, dashed, thick]  (t2) edge (y1); -->
+<!-- \draw[[-latex, red, dashed, thick]   (t2) edge (y2); -->
+<!-- \draw[-latex, red, dashed, thick]   (t2) edge (y3); -->
+<!-- \draw[-latex, red, dashed, thick]  (t2) edge (y4); -->
+<!-- \draw[-latex, red, dashed, thick]  (t2) edge (y5); -->
+
+
+<!-- % \node[resid] (f1) at  (2, -4) {$e_1$}; -->
+<!-- % \node[resid] (f2) at  (3, -4) {$e_2$}; -->
+<!-- % \node[resid] (f3) at  (4, -4) {$e_3$}; -->
+<!-- % \node[resid] (f4) at  (5, -4) {$e_4$}; -->
+<!-- % \node[resid] (f5) at  (6, -4) {$e_5$}; -->
+<!-- %  -->
+<!-- % \draw[-latex]  (f1) edge (y1); -->
+<!-- % \draw[-latex]  (f2) edge (y2); -->
+<!-- % \draw[-latex]  (f3) edge (y3); -->
+<!-- % \draw[-latex]  (f4) edge (y4); -->
+<!-- % \draw[-latex]  (f5) edge (y5); -->
+
+
+<!-- \end{tikzpicture} -->
+
+<!-- ``` -->
 
 <!-- The focus of this work shop is comparing educational and psychological tests over  independent groups of respondents. Often, we want to use test data to compare groups on the construct being measured, for example, by comparing group means on the overall test score. However, test scores can also be influenced by attributes of the respondent other than the trait being measured. In the western world, a common example is assessments of depression that ask about whether a person has cried in the last week. Men are less likely to endorse this item than females, even when they have the same level of depression  (Bauer, 2017). Thus comparing men and women on their overall test score would lead to underestimation of the level of depression in men. This example is  -->
 
 This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:
 
--   Part 1: MI in the unidimensional factor model for categorical data. This begins with a review of the factor model, the interpretation of various "levels" of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.
+-   Part 1 addresses MI in the unidimensional factor model for categorical data. The focus is on various "levels" of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.
 
--   Part 2: If MI is rejected, then one or more items must exhibit DIF. This situation, which is also referred to as partial MI, requires inferences about individual assessment items and has traditionally be addressed in the context of item response theory (IRT). This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.
+-   Part 2 addresses what to do when MI is rejected. In this case, it can be concluded that one or more assessment items exhibit DIF, which is also referred to as partial MI. Methods for inferring which items exhibit DIF were originally developed in the context of item response theory (IRT) rather than factor analysis. This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.
 
--   Part 3: Review of some more recent approaches to DIF analysis, focusing on the author's work on how DIF can be approached as a problem in robust scaling ([Halpin, 2022](https://arxiv.org/abs/2207.04598)) and extensions of this approach to test for whether DIF affects conclusions about how groups differ on the measured construct.
+-   Part 3 reviews of some more recent approaches to DIF analysis, focusing on the author's work on how DIF can be approached as a problem in robust scaling ([Halpin, 2022](https://arxiv.org/abs/2207.04598)) and extensions of this approach to evaluate differential test functioning (DTF).
 
 ## Requirements
 
-The course assumes a background in factor analysis and / or item response theory. Numerical illustrations use the `R` programming language. To ensure you are able to follow along with the numerical examples, it is recommended to install the following libraries prior to attending the workhop.
+The course assumes a background in factor analysis and / or item response theory. Numerical illustrations use the `R` programming language. To ensure participants are able to follow along with the numerical examples during the workshop, it is recommended to install the following libraries prior to attending.
 
 ```{r, echo = T, eval = F}
 # Factor analysis
@@ -31,17 +126,32 @@ install.packages("remotes")
 remotes::install_github("peterhalpin/robustDIF")
 
 # Plotting
-install.packages("ggplot")
+install.packages("ggplot2")
 ```
 
-The course uses a synthetic data example linked below (password protected):
+## Data
 
--   \[check back for link\]
+The data set linked below is used for numerical illustrations. Note that access to the data is password protected. The password will be shared with participants in the first session of the workshop
 
-## Schedule and materials
+-   *Link to data*
 
-| Session | Materials                                                                                   | Supplementary                                                                                                                                                                                                                                                                                                                          |
-|-------------------|---------------------------|---------------------------|
-| Day 1   | [Slides](files/Week11.html){target="_blank"} - [Notes](files/Week11.docx) - [Coding Example](files/DIF.html){target="_blank"} | *Review of MI and DIF*: [Thissen, 2023](files/DIF-MIhistory9-12-23version.pdf){target="_blank"}                                                                                                                                                                                                                                                         |
-| Day 2   | Slides - Notes - Coding Example                                                             | *Traditional approaches to DIF*: [Teresi et. al, 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8889890/){target="_blank"}                                                                                                                                                                                                                          |
-| Day 3   | Slides - Notes - Coding Example                                                             | *Robust scaling*: [He & Cui, 2020](files/He%20and%20Cui%20-%202020%20-%20Evaluating%20Robust%20Scale%20Transformation%20Methods%20Wit.pdf){target="_blank"}; Robust DIF: [Halpin, 2022](https://arxiv.org/abs/2207.04598){target="_blank"}; [Wang et al., 2022](files/Wang%20et%20al.%20-%202022%20-%20Testing%20Differential%20Item%20Functioning%20Without%20Pred.pdf){target="_blank"} |
+## Schedule and Materials
+
++-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| Session   | Materials                                       | Supplementary                                                                                                                            |
++===========+=================================================+==========================================================================================================================================+
+| Part 1    | [Slides](files/Week11.html){target="_blank"}\   | - Review of MI and DIF: [Thissen, 2023](files/Thissen2023.pdf){target="_blank"}                                                          |
+|           | [Notes](files/Week11.docx){target="_blank"} \   | - MI for categorical data: [Muthen & Asparouhov, 2002](files/Muthen2002.pdf){target="_blank"}\                                           |
+|           | [Code](files/DIF.html){target="_blank"}\        |   [Millsap & Yun-Tein, 2004](files/Millsap2004.pdf){target="_blank"};  [Wu & Estabrook, 2016](files/Wu2016.pdf){target="_blank"}         |
++-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| Part 2    | [Slides](files/Week11.html){target="_blank"}\   | - Factor analysis and IRT: [Wirth & Edwards, 2007](files/Wirth2007.pdf){target="_blank"}                                                 |
+|           | [Notes](files/Week11.docx){target="_blank"}\    | - Review of DIF: [Teresi et. al, 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8889890/){target="_blank"}                           |
+|           | [Code](files/DIF.html){target="_blank"}\        |                                                                                                                                          |
++-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| Part 3    | [Slides](files/Week11.html){target="_blank"}\   | - Robust scaling: [He & Cui, 2020](files/He2020.pdf){target="_blank"}                                                                    |
+|           | [Notes](files/Week11.docx){target="_blank"}\    | - Robust DIF: [Halpin, 2022](https://arxiv.org/abs/2207.04598){target="_blank"}; [Wang et al.,2022](files/Wang2022.pdf){target="_blank"} |
+|           | [Code](files/DIF.html){target="_blank"}  \      |                                                                                                                                          |
++-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
