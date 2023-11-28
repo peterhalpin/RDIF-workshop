@@ -99,22 +99,30 @@ title: "MI / DIF Workshop"
 
 <!-- ``` -->
 
-<!-- The focus of this work shop is comparing educational and psychological tests over  independent groups of respondents. Often, we want to use test data to compare groups on the construct being measured, for example, by comparing group means on the overall test score. However, test scores can also be influenced by attributes of the respondent other than the trait being measured. In the western world, a common example is assessments of depression that ask about whether a person has cried in the last week. Men are less likely to endorse this item than females, even when they have the same level of depression  (Bauer, 2017). Thus comparing men and women on their overall test score would lead to underestimation of the level of depression in men. This example is  -->
+The focus of this workshop is on assessing the structure of and comparing educational and psychological tests over independent groups of respondents. Often, we want to use test data to compare groups on the construct being measured, for example, by comparing group means on the overall test score. However, test scores can also be influenced by attributes of the respondent other than the trait being measured. In the United States, a common example is assessments of depression that ask about whether a person has cried in the last week. Men are less likely to endorse this item than females, even when they have the same level of depression  (Bauer, 2017). Thus comparing men and women on their overall test score would lead to underestimation of the level of depression in men. 
 
-This workshop on measurement invariance (MI) and differential item functioning (DIF) is organized as follows:
+This workshop introduces new open-source tools that hold promise for streamlining the analysis and the disaggregation of data from educational and psychological tests while ensuring the fairness of the data. Covering k-fold factor analysis (kfa), measurement invariance (MI) and differential item functioning (DIF), the workshop is organized as follows:
 
--   Part 1 addresses MI in the unidimensional factor model for categorical data. The focus is on various "levels" of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.
+-   Part 1 addresses how to  establish the structure of the assessment: How many dimensions are in the assessment? Which items correspond to which dimensions? In this training, we will introduce a new open-source resource for efficiently identifying and confirming the structure of an assessment: the k-fold cross validation for factor analysis (kfa) R package. kfa combines an exploratory and confirmatory model-based factor analytic approach that efficiently leverages all available data provides user-friendly, synthesized information on the structure of an assessment, aiding in consensus around scale development and scoring. 
 
--   Part 2 addresses what to do when MI is rejected. In this case, it can be concluded that one or more assessment items exhibit DIF, which is also referred to as partial MI. Methods for inferring which items exhibit DIF were originally developed in the context of item response theory (IRT) rather than factor analysis. This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.
+-   Part 2 addresses MI in the unidimensional factor model for categorical data. The focus is on various "levels" of MI that are obtained by imposing increasingly strict constraints on the model (e.g., configural, weak / metric, strong / scalar), and how these constraints can be tested using empirical data.
 
--   Part 3 reviews of some more recent approaches to DIF analysis, focusing on the author's work on how DIF can be approached as a problem in robust scaling ([Halpin, 2022](https://arxiv.org/abs/2207.04598)) and extensions of this approach to evaluate differential test functioning (DTF).
+-   Part 3 addresses what to do when MI is rejected. In this case, it can be concluded that one or more assessment items exhibit DIF, which is also referred to as partial MI. Methods for inferring which items exhibit DIF were originally developed in the context of item response theory (IRT) rather than factor analysis. This part of the workshop begins with a review of IRT, emphasizing its relationship with factor analysis for categorical data, and then discusses some traditional techniques for DIF analysis (the Mantel-Haenszel test and the likelihood ratio test). Emphasis is given to the problem of anchor item selection.
+
+-   Part 4 reviews of some more recent approaches to DIF analysis, focusing on the author's work on how DIF can be approached as a problem in robust scaling ([Halpin, 2022](https://arxiv.org/abs/2207.04598)) and extensions of this approach to evaluate differential test functioning (DTF).
 
 ## Requirements
 
 The course assumes a background in factor analysis and / or item response theory. Numerical illustrations use the `R` programming language. To ensure participants are able to follow along with the numerical examples during the workshop, it is recommended to install the following libraries prior to attending.
 
 ```{r, echo = T, eval = F}
+# Data manipulation and summary statistics
+# install.packages("psych")
+# install.packages("gtsummary")
+# install.packages("dplyr")
+
 # Factor analysis
+install.packages ("kfa")
 install.packages("lavaan")
 install.packages("semTools")
 
@@ -140,15 +148,18 @@ The data set linked below is used for numerical illustrations. Note that access 
 +-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 | Session   | Materials                                       | Supplementary                                                                                                                            |
 +===========+=================================================+==========================================================================================================================================+
-| Part 1    | [Slides](files/Week11.html){target="_blank"}\   | - Review of MI and DIF: [Thissen, 2023](files/Thissen2023.pdf){target="_blank"}                                                          |
+| Part 1    | [Slides](){target="_blank"}\                    |                                                                                                                                          |
+|           | [Code](){target="_blank"}\        |                                                                                                                                          |
++-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| Part 2    | [Slides](files/Week11.html){target="_blank"}\   | - Review of MI and DIF: [Thissen, 2023](files/Thissen2023.pdf){target="_blank"}                                                          |
 |           | [Notes](files/Week11.docx){target="_blank"} \   | - MI for categorical data: [Muthen & Asparouhov, 2002](files/Muthen2002.pdf){target="_blank"}\                                           |
 |           | [Code](files/DIF.html){target="_blank"}\        |   [Millsap & Yun-Tein, 2004](files/Millsap2004.pdf){target="_blank"};  [Wu & Estabrook, 2016](files/Wu2016.pdf){target="_blank"}         |
 +-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Part 2    | [Slides](files/Week11.html){target="_blank"}\   | - Factor analysis and IRT: [Wirth & Edwards, 2007](files/Wirth2007.pdf){target="_blank"}                                                 |
+| Part 3    | [Slides](files/Week11.html){target="_blank"}\   | - Factor analysis and IRT: [Wirth & Edwards, 2007](files/Wirth2007.pdf){target="_blank"}                                                 |
 |           | [Notes](files/Week11.docx){target="_blank"}\    | - Review of DIF: [Teresi et. al, 2021](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8889890/){target="_blank"}                           |
 |           | [Code](files/DIF.html){target="_blank"}\        |                                                                                                                                          |
 +-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Part 3    | [Slides](files/Week11.html){target="_blank"}\   | - Robust scaling: [He & Cui, 2020](files/He2020.pdf){target="_blank"}                                                                    |
+| Part 4    | [Slides](files/Week11.html){target="_blank"}\   | - Robust scaling: [He & Cui, 2020](files/He2020.pdf){target="_blank"}                                                                    |
 |           | [Notes](files/Week11.docx){target="_blank"}\    | - Robust DIF: [Halpin, 2022](https://arxiv.org/abs/2207.04598){target="_blank"}; [Wang et al.,2022](files/Wang2022.pdf){target="_blank"} |
 |           | [Code](files/DIF.html){target="_blank"}  \      |                                                                                                                                          |
 +-----------+-------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
