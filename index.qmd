@@ -47,7 +47,7 @@ install.packages("ggplot2")
 El conjunto de datos a continuación se utiliza para hacer ilustraciones numéricas. Tenga en cuenta que el acceso a los datos está protegido por una contraseña. La contraseña se compartirá con los participantes en la primera sesión del taller.
 
 
--   *Link to data*
+-  [Link to data](https://nyu.box.com/s/qbnid5p62jf00p1s2bohke984o2abwbi)
 
 ## Agenda y materiales
 
